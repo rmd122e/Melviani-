@@ -1,91 +1,89 @@
 <!DOCTYPE html>
 
-<html><!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>webnew</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #ffdde1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        h1 {
-            color: #ff5e78;
-            text-align: center;
-        }
-        button {
-            background-color: #ff5e78;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            margin: 10px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        button:hover {
-            background-color: #ff416c;
-        }
-        #response {
-            margin-top: 20px;
-            text-align: center;
-        }
-        img {
-            max-width: 300px;
-            height: auto;
-            border-radius: 10px;
-        }
-    </style>
-    <script>
-        let clickCount = 0;
-
-        function showLoveMessage() {
-            clickCount++;
-            const responseDiv = document.getElementById("response");
-
-            if (clickCount === 5) {
-                responseDiv.innerHTML = `
-                    <p>Aku juga sayang kamu! ❤️</p>
-                    <img src="love.png">
-                `;
-            } else if (clickCount < 5) {
-                responseDiv.innerHTML = `<p>Hmmm, yang benerrrr?Klik lagi ya!</p>`;
-            }
-        }
-
-        function breakupMessage() {
-            const responseDiv = document.getElementById("response");
-            responseDiv.innerHTML = `
-                <p>Kita putus 😭</p>
-                <img src="1.png">
-            `;
-        }
-    </script>
-</head>
-<body>
-    <h1>Kamu sayang aku apa tidak? 🥰</h1>
-    <button onclick="showLoveMessage()">Sayang</button>
-    <button onclick="breakupMessage()">Tidak</button>
-    <div id="response"></div>
-</body>
-</html>
+<html>
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <link rel="stylesheet" href="styles/style.css"/>
-  <title>JAWAB JUJUR!</title>
+  <title></title>
 </head>
 <body>
   <h1>
-    JAWAB JUJUR!
+   JANGAN DI PENCET<!DOCTYPE html>
+<html>
+<head>
+  <title>selama datang kak melvi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;  /* Atur konten di tengah secara vertikal */
+      align-items: center;      /* Atur konten di tengah secara horizontal */
+      height: 100vh;            /* Tinggi halaman penuh */
+      margin: 0;                /* Hilangkan margin default */
+      background-color: #fff0f5; /* Tambahkan warna latar belakang */
+      text-align: center;       /* Pastikan semua teks rata tengah */
+    }
+
+    button {
+      padding: 40px 60px;
+      background-color: pink;
+      border: yes;
+      color: white;
+      font-size: 30px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: red;
+    }
+
+    #quote {
+      margin-top: 20px;
+      font-size: 40px;
+      color: #333;
+      width: 80%;               /* Batas lebar quote */
+      max-width: 600px;         /* Batas maksimal lebar */
+      word-wrap: break-word;    /* Agar teks panjang terpecah jika perlu */
+    }
+  </style>
+</head>
+<body>
+  <h1>JANGAN DI PENCET</h1>
+  <button onclick="generateQuote()">pencet ini!</button>
+  <p id="quote"></p>
+
+  <script>
+    // Array kosong, tambahkan kata-kata quotes sendiri
+    const quotes = [
+      "HALOOO",
+      "RAIMU ASU",
+      "SENG MOCO KOYOK KIREK",
+      "BY ONE DEK",
+      "DANCOKKKKK",
+      "SHARELOK TAK PARANI"
+     
+    ];
+
+    // Index untuk menampilkan quote secara urut
+    let index = 0;
+
+    function generateQuote() {
+      if (quotes.length === 0) {
+        document.getElementById("quote").innerText = "Belum ada quotes. Tambahkan dulu di array!";
+        return;
+      }
+
+      // Tampilkan quote berdasarkan index
+      document.getElementById("quote").innerText = quotes[index];
+
+      // Perbarui index (reset jika sudah di akhir array)
+      index = (index + 1) % quotes.length;
+    }
+  </script>
+</body>
+</html>
   </h1>
 </body>
 </html>
